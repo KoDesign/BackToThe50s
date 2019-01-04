@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+.screentearing{
+opacity: 0.3;
+height: 0.2vw;
+width: 100vw;
+background-color: grey;
+filter: blur(1px);
+left:0px;
+margin: auto;
+position: fixed;
+animation-name: Tearingdown;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+z-index: 1;
+pointer-events: none;
+}
+
+.screentearing2{
+opacity: 0;
+height: 0.2vw;
+width: 100vw;
+background-color: white;
+filter: blur(1px);
+left:0px;
+margin: auto;
+position: fixed;
+animation-name: Tearingdown;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+z-index: 1;
+pointer-events: none;
+}
+
+
+.yellowing{
+height: 100%;
+width: 100vw;
+position: fixed;
+margin: none;
+left:0px;
+top: 0px;
+background-color: antiquewhite;
+z-index: 1;
+background-blend-mode: difference;
+opacity: 0.2;
+pointer-events: none;
+}
+
+@keyframes Tearingdown{
+	0%{
+		top: -1vw;
+		opacity: 0.3;
+}
+	100%{
+		top: 100%;
+		opacity: 0.3;
+}
+}
